@@ -31,7 +31,7 @@ env.Append(CPPPATH=['mongo-cxx-driver/src'])
 env.Append(CPPPATH=['mongo-cxx-driver/src/mongo'])
 env.Append(LIBPATH=['mongo-cxx-driver'])
 env.Append(LIBPATH=['mongo-cxx-driver'])
-env.Append(LIBPATH=[os.path.join(env['MONGO_SRC_DIR'], '/build/darwin/normal/third_party/boost/')])
+env.Append(LIBPATH=[os.path.join(env['MONGO_SRC_DIR'], 'build/darwin/normal/third_party/boost/')])
 env.Append(LIBPATH=[os.path.join(env['MONGO_PREFIX'], 'lib')])
 env.Append(CPPPATH=[os.path.join(env['MONGO_PREFIX'], 'include')])
 
