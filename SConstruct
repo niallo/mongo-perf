@@ -28,7 +28,7 @@ libs = [ "mongoclient",  "boost_thread" , "boost_filesystem" , 'boost_program_op
 
 def checkLib( lib ):
     if lib.startswith('boost_'):
-        if conf.CheckLib( lib ):
+        if conf.CheckLib( lib + '-mt' ):
             return True
 
     if conf.CheckLib( lib ):
